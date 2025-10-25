@@ -1,0 +1,221 @@
+/* ==========================================================
+   STYLE.CSS — Abhillasitta Portfolio Website
+   ========================================================== */
+
+/* ==============================
+   1. Pengaturan Dasar
+   ============================== */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 40px;
+    padding: 0;
+    background-color: #f9fafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==============================
+   2. Header & Navigasi
+   ============================== */
+header {
+    background: #333;
+    color: white;
+    padding: 1em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #4c82fb;
+    border-radius: 5px;
+}
+
+/* ==============================
+   3. Hero Section
+   ============================== */
+#hero {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.hero-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ==============================
+   4. Judul Halaman
+   ============================== */
+h1 {
+    color: white;
+    border-bottom: 3px solid #4c82fb;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: #4c82fb;
+}
+
+/* ==============================
+   5. Tabel Pendidikan & Portofolio
+   ============================== */
+.table-responsive {
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4c82fb;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f6ff;
+}
+
+tr:hover {
+    background-color: #e8f0ff;
+    transition: 0.2s;
+}
+
+/* ==============================
+   6. Bagian Keahlian
+   ============================== */
+.section {
+    margin-top: 40px;
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* ==============================
+   7. Form Kontak
+   ============================== */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* ==============================
+   8. Media Query (Responsif)
+   ============================== */
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        padding: 0.5em 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin-top: 20px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
